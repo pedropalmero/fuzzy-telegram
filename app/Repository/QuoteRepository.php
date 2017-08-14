@@ -29,7 +29,7 @@ class QuoteRepository
           ->first();
     }
 
-    public function save(Quote $quote): void
+    public function save(Quote $quote)
     {
         $quote->save();
     }
