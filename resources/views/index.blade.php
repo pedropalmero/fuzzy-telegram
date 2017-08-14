@@ -13,7 +13,6 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -63,6 +62,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+            }
         </style>
     </head>
     <body>
@@ -74,6 +82,8 @@
 
                 <div class="content">
                     {{ $quote->text }}
+
+                    <img src="{{ $quote->image }}" class="bg" />
                 </div>
 
                 <div class="footer">
