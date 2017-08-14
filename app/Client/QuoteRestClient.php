@@ -6,7 +6,7 @@ namespace App\Client;
 
 class QuoteRestClient
 {
-    private const ENDPOINT = 'http://quotes.rest/qod.json?category=%s';
+    const ENDPOINT = 'http://quotes.rest/qod.json?category=%s';
 
     public function retrieveQuote(string $category): array
     {
