@@ -11,6 +11,7 @@ class Quote extends Model
         $quote = new Quote();
         $quote->category = $quoteData['category'];
         $quote->text = $quoteData['quote'];
+        $quote->image = $quoteData['background'];
 
         return $quote;
     }
